@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Control8</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <meta charset="utf-8">
+  <title>Control8 - Tu aplicación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  
+  <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/app-icon-128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/app-icon-128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/app-icon-128.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/app-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/app-icon-128.png">
+
 </head>
 <body>
 
 <%= yield %>
 
+<%= javascript_include_tag "application" %>
 </body>
 </html>
