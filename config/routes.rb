@@ -1,7 +1,15 @@
 Control8::Application.routes.draw do
+
+  #Paginas estaticas
   get "static_pages/home"
 
   get "static_pages/help"
+
+  get "static_pages/about"
+
+  get "static_pages/news"
+
+  get "static_pages/contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
